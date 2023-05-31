@@ -1,0 +1,23 @@
+#  ~A->~B, B->D,(A&D)->~C |- B->~C
+
+1. T ~A->~B				pre
+2. T B->D				pre
+3. T (A&D)->~C				pre
+4. F B->~C				conclusao
+5. T B					->F 4
+6. F ~C					->F 4
+7.  {	F B				->T 2
+8.	@				fechado 5,7}
+9.  {	T D				->T 2
+10.	{	F ~A			->T 1
+11.		T A			~F 10
+12.		{ 	F A&D		->T 3
+13.		  	{	F A	&F 12
+14.				@	fechado 13,11}
+15.			{	F D	&F 12
+16.				@	fechado 9,15}}
+17.		{	T ~C		->T 3
+18.			@		fechado 6,17}}
+19.	{	T ~B			->T 1
+20. 		F B			~T 19
+21.		@			fechado 5,20}}

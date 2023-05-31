@@ -1,0 +1,10 @@
+# ~A->B, A->C,~B |- C
+
+1. ~A->B		pre
+2. A->C			pre
+3. ~B			pre
+4. { 	~A		hip
+5.	B		->e 1,4
+6. 	@		~e 3,5}
+7. A			raa 4-6
+8. C			->e 2

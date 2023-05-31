@@ -1,0 +1,8 @@
+# |- A&(A|B)->A
+
+1. F A&(A|B)->A		conclusao
+2. T A&(A|B)		->F 1
+3. F A			->F 1
+4. T A			&T 2
+5. T A|B		&T 2
+6. @			fechado 3,4

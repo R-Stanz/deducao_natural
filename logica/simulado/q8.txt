@@ -1,0 +1,15 @@
+#  (D|P)->~C, A->C, D |- P 
+
+1. T (D|P)->~C			pre
+2. T A->C			pre
+3. T D				pre
+4. F P				conclusao
+5.  { 	F D|P			->T 1
+6. 	F D			|F 5
+7.	F P			|F 5
+8.	@			fechado 3,6}
+9.  {	T ~C			->T 1
+10.	F C			~T 9
+11.	{	F A		->T 2}
+12.	{	T C		->T 2
+13.		@		fechado 10,12}}

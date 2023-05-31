@@ -1,0 +1,9 @@
+#  |- (A->B)->(B->A)
+
+1. F (A->B)->(B->A)	conclusao
+2. T A->B		->F 1
+3. F B->A		->F 1
+4. T B			->F 3
+5. F A			->F 3
+6. { F A		->T 2}
+7. { T B		->T 2}

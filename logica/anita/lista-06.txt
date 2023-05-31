@@ -1,0 +1,7 @@
+#  |- A|~A	
+
+1. F A|~A	conclusao
+2. F A		|F 1
+3. F ~A		|F 1
+4. T A		~F 3
+5. @		fechado 2,4

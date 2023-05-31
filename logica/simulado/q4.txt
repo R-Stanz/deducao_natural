@@ -1,0 +1,15 @@
+#  A->(B->~C), B|- ~A|~C
+
+1. T A->(B->~C)			pre
+2. T B				pre
+3. F ~A|C			conclusao
+4. F ~A				|F 3
+5. F C				|F 3
+6. T A				~F 4
+7. { 	F A			->T 1
+8.	@			fechado 6,7}
+9. {	T B->~C			->T 1
+10.	{	F B		->T 9
+11.		@		fechado 2,10}
+12.	{	T ~C		->T 9
+13.		F C		~T 12}}
